@@ -8,6 +8,28 @@
 <!doctype html>
 <html lang="en">
 <head>
+<script>
+window.dataLayer = window.dataLayer || [];
+
+window.dataLayer.push({
+	'event' : 'purchase',
+	'ecommerce' : {
+		'currency' : 'USD'
+		'value' : 350.00,
+		'transaction_id' : '1234'
+		'items' : [{
+			'item_name' : 'Top Up T-Shirt',
+			'price' : 250.00,
+			'quantity' : '1'
+		}, {
+			'item_name' : 'Polo Shirt',
+			'price' : 100.00,
+			'quantity' : '1'
+		}]
+	}
+});
+</script>
+  </script>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
