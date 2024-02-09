@@ -11,13 +11,14 @@
 <script>
 window.dataLayer = window.dataLayer || [];
 
+var transactionId = crypto.randomUUID();	
 window.dataLayer.push({'ecommerce' : null});
 window.dataLayer.push({
 	'event' : 'purchase',
 	'ecommerce' : {
 		'currency' : 'USD',
 		'value' : 350.00,
-		'transaction_id' : '1234',
+		'transaction_id' : transaction_id,
 		'items' : [{
 			'item_name' : 'Top Up T-Shirt',
 			'price' : 250.00,
