@@ -8,6 +8,29 @@
 <!doctype html>
 <html lang="en">
 <head>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		
+		var transactionId = crypto.randomUUID();	
+		window.dataLayer.push({'ecommerce' : null});
+		window.dataLayer.push({
+			'event' : 'purchase',
+			'ecommerce' : {
+				'currency' : 'USD',
+				'value' : 350.00,
+				'transaction_id' : transactionId,
+				'items' : [{
+					'item_name' : 'Top Up T-Shirt',
+					'price' : 250.00,
+					'quantity' : '1'
+				}, {
+					'item_name' : 'Polo Shirt',
+					'price' : 100.00,
+					'quantity' : '1'
+				}]
+			}
+		});
+		</script>
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -38,29 +61,7 @@
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-58333PCP"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- End Google Tag Manager (noscript) -->
-		<script>
-		window.dataLayer = window.dataLayer || [];
 		
-		var transactionId = crypto.randomUUID();	
-		window.dataLayer.push({'ecommerce' : null});
-		window.dataLayer.push({
-			'event' : 'purchase',
-			'ecommerce' : {
-				'currency' : 'USD',
-				'value' : 350.00,
-				'transaction_id' : transactionId,
-				'items' : [{
-					'item_name' : 'Top Up T-Shirt',
-					'price' : 250.00,
-					'quantity' : '1'
-				}, {
-					'item_name' : 'Polo Shirt',
-					'price' : 100.00,
-					'quantity' : '1'
-				}]
-			}
-		});
-		</script>
 		<!-- Start Header/Navigation -->
 		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
 
